@@ -49,3 +49,7 @@ cd felinos
 npm install
 ng serve -o
 ```
+
+# Abrir la aplicacion web en su sistema
+
+Debe tener un navegador, se dirige a `cd felinos/docs` y abre el archivo index.html con el navegador web
