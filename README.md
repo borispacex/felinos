@@ -39,3 +39,13 @@ Vamos a crear el segundo servicio para consumir la API de Fotos felinas
 ## La aplicación web esta en el siguiente enlace
 
 <https://borisvargas.github.io/felinos>
+
+# Ejecutar la apliacion Web en su sistema
+
+Debe tener instalado Nodejs, npm y angular 9+.
+
+```
+cd felinos
+npm install
+ng serve -o
+```

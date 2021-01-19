@@ -54,6 +54,4 @@ export class FotosFelinasComponent implements OnInit {
     this.imagenSelected = this.fotosFelinas[this.indice].url;
   }
 
-
-
 }
