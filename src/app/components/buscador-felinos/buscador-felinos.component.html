@@ -1,0 +1,74 @@
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">
+            <img class="img-fluid" src="assets/images/Logo_DazaSoftware.png" alt="logo">
+        </th>
+        <th scope="col">
+            <h3 class="text-center">El Buscador Felino</h3>
+        </th>
+        <th scope="col">
+            <!-- Vacio -->
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th></th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th class="text-right" scope="row">Raza Felina:</th>
+        <td>
+            <form>
+                <div class="form-group">
+                  <select class="form-control" id="buscador" (change)='filtroBusqueda($event.target.value)'>
+                    <option *ngFor="let felino of felinos" [value]="felino.id">{{felino.name}}</option>
+                  </select>
+                </div>
+            </form>
+        </td>
+        <td rowspan="10">
+            <img  class="img-fluid align-items-center" src={{felinoSelected.image.url}} alt="imagen_gato">
+        </td>
+      </tr>
+      <tr>
+        <th></th>
+        <td></td>
+      </tr>
+      <tr>
+        <th class="text-right" scope="row">Id:</th>
+        <td>{{felinoSelected.id}}</td>
+      </tr>
+      <tr>
+        <th class="text-right" scope="row">Nombre:</th>
+        <td>{{felinoSelected.name}}</td>
+      </tr>
+      <tr>
+        <th class="text-right" scope="row">Descripción:</th>
+        <td>{{felinoSelected.description}}</td>
+      </tr>
+      <tr>
+        <th class="text-right" scope="row">Años de Vida:</th>
+        <td>{{felinoSelected.life_span}}</td>
+      </tr>
+      <tr>
+        <th class="text-right" scope="row">Origen:</th>
+        <td>{{felinoSelected.origin}}</td>
+      </tr>
+      <tr>
+        <th class="text-right" scope="row">Wiki:</th>
+        <td><a href="{{felinoSelected.wikipedia_url}}" target="_blank">{{felinoSelected.wikipedia_url}}</a></td>
+      </tr>
+      <tr>
+        <th class="text-right" scope="row">VetStreet:</th>
+        <td><a href="{{felinoSelected.vetstreet_url}}" target="_blank">{{felinoSelected.vetstreet_url}}</a></td>
+      </tr>
+      <tr>
+        <th></th>
+        <td></td>
+      </tr>
+
+    </tbody>
+  </table>

@@ -1,0 +1,48 @@
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">
+            <img class="img-fluid" src="assets/images/Logo_DazaSoftware.png" alt="logo">
+        </th>
+        <th scope="col">
+            <h3 class="text-center">18 Fotos Felinas</h3>
+        </th>
+        <th scope="col">
+            <!-- Vacio -->
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th></th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th class="text-center" colspan="3">
+            <img class="img-fluid" src="{{imagenSelected}}" alt="primero">
+        </th>
+      </tr>
+      <tr>
+        <th class="text-center" colspan="3">
+            <button type="button" class="btn btn-light mr-1" data-toggle="tooltip" data-placement="top" title="Primero" (click)="primero()">
+                <img class="img-fluid" src="assets/images/primero.jpg" alt="primero" width="45px">
+            </button>
+            <button type="button" class="btn btn-light mr-1" data-toggle="tooltip" data-placement="top" title="Anterior" (click)="anterior()">
+                <img class="img-fluid" src="assets/images/anterior.jpg" alt="primero" width="45px">
+            </button>
+            <button type="button" class="btn btn-light mr-1" data-toggle="tooltip" data-placement="top" title="Siguiente" (click)="siguiente()">
+                <img class="img-fluid" src="assets/images/siguiente.jpg" alt="primero" width="45px">
+            </button>
+            <button type="button" class="btn btn-light mr-1" data-toggle="tooltip" data-placement="top" title="Ultimo" (click)="ultimo()">
+                <img class="img-fluid" src="assets/images/ultimo.jpg" alt="primero" width="45px">
+            </button>
+        </th>
+      </tr>
+      <tr>
+        <th class="text-center" colspan="3">
+            <button type="button" class="btn btn-primary" (click)="obtenerFotosFelinas()">Nuevas Fotos</button>
+        </th>
+      </tr>
+    </tbody>
+  </table>

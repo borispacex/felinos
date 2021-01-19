@@ -1,27 +1,41 @@
 # Felinos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
+- `Nombre:` Boris Vargas Paucara
+- `Celular:` 60514138
 
-## Development server
+## Desarrollo de la aplicacion web
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Creamos el proyecto con el Framework Angular
+> ng new felinos
 
-## Code scaffolding
+Ingresamos al proyecto
+> cd felinos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Abrimos el proyecto con el editor de codigo VSCODE
+> code .
 
-## Build
+Instalamos dependencias Bootstrap4 para que la aplicacion web sea responsiva
+> npm install bootstrap jquery @popperjs/core
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Correr de manera local y abre el navegador por defecto
+> ng serve --open
 
-## Running unit tests
+### Creación de componentes
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Vamos a crear el primer componente que sera el de Buscar felinos
+> ng generate component components/buscadorFelinos
 
-## Running end-to-end tests
+Vamos a crear el segundo componente que sera el de Fotos felinas
+> ng generate component components/fotosFelinas
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Creación de servicios
 
-## Further help
+Vamos a crear el primer servicio para consumir la API de Buscador felinos
+> ng generate service services/felinos
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Vamos a crear el segundo servicio para consumir la API de Fotos felinas
+> ng generate service services/fotosFelinas
+
+## La aplicación web esta en el siguiente enlace
+
+<https://borisvargas.github.io/felinos>
