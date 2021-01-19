@@ -8,7 +8,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 const routes: Routes = [
   { path: 'buscador-felinos', component: BuscadorFelinosComponent },
   { path: 'fotos-felinas', component: FotosFelinasComponent },
-  { path: '',   redirectTo: '/buscador-felinos', pathMatch: 'full' }, // redirect to `first-component`
+  { path: '',   redirectTo: '/buscador-felinos', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
 

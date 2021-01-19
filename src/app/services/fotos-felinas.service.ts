@@ -17,5 +17,4 @@ export class FotosFelinasService {
     return this.httpClient.get<any>(this.url).toPromise()
     .then(res => res);
   }
-  
 }

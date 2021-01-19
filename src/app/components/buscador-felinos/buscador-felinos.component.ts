@@ -9,11 +9,7 @@ import { FelinosService } from 'src/app/services/felinos.service';
 export class BuscadorFelinosComponent implements OnInit {
 
   public felinos: any = [];
-  public felinoSelected: any = {
-    image: {
-      url: 'https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg'
-    }
-  };
+  public felinoSelected: any = {};
 
   constructor(private serviceFelinos: FelinosService) { }
 
@@ -31,23 +27,13 @@ export class BuscadorFelinosComponent implements OnInit {
     }).catch(error => { console.log('error al obtener felinos', error); });
   }
 
-  // Funcion para obtener el felino por id
-  obtenerFelinoById(id: string) {
-    this.serviceFelinos.getFelinoById(id)
-    .then(response => {
-      this.felinoSelected = response[0].breeds[0];
-      // console.log(this.felinoSelected);
-    }).catch(error => { console.log('error al obtener felino por ID', error); });
-  }
-
   // Funcion de otra forma de obtener el felino por id
   filtroBusqueda(id: string) {
-    for (let i = 0; i < this.felinos.length; i++) {
-      if (this.felinos[i].id === id) {
-        this.felinoSelected = this.felinos[i];
-        // console.log(this.felinos[i]);
+    this.felinos.forEach(felino => {
+      if (felino.id === id) {
+        this.felinoSelected = felino;
+        // console.log(this.felinoSelected);
       }
-    }
+    });
   }
-
 }
